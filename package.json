@@ -6,6 +6,9 @@
   "scripts": {
     "start": "parcel public/index.html",
     "build": "parcel build public/index.html",
+    "postcss:build": "postcss ./src/css/index.css --output ./public/style.min.css --config ./postcss.config.js",
+    "postcss:watch": "postcss ./src/css/index.css --output ./public/style.min.css --watch --config ./postcss.config.js",
+    "build:prod": "npm run postcss:build && parcel build public/index.html",
     "test": "jest"
   },
   "repository": {

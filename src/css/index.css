@@ -3,7 +3,7 @@
 */
 
 /* imports a CSS reset file */
-@import 'sanitize.css/sanitize';
+@import './_normalize';
 
 /* imports all tachyons modules
    (postcss looks for them from node_modules)

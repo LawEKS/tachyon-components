@@ -1,14 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import styled from 'styled-components'
-import './css/index.css'
+import '../public/style.min.css'
 
-const Text = styled.p.attrs({
-  className: 'font-5 ttc sans-serif black',
-})``
+import Title from './components/Title'
 
 const App = () => {
-  return <Text>hello, world</Text>
+  return <Title>hello, world</Title>
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
