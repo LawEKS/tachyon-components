@@ -9,8 +9,12 @@
     "postcss:build": "postcss ./src/css/index.css --output ./public/style.min.css --config ./postcss.config.js",
     "postcss:watch": "postcss ./src/css/index.css --output ./public/style.min.css --watch --config ./postcss.config.js",
     "build:prod": "npm run postcss:build && parcel build public/index.html",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
+  "pre-commit": [
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LawEKS/tachyon-components.git"
